@@ -1,0 +1,155 @@
+---
+title: "Project Proposal"
+output:
+  html_document: default
+  pdf_document: default
+---
+
+__Proposal Deadline: Feb 3, 2019 23:59:00 hrs.__
+
+- Edit this markdown file by __replacing only__ what is there in the
+chunks named `q0`, `q1`, `q2`, ..., `q5` with your team's appropriate
+answers. These chunks have been filled in as an example using the
+OpenFDA data.
+
+- Upload the filled in markdown to the project proposal assignment
+area (will be created shortly) in every one of the team member's
+private directory with the name `proposal.Rmd`.
+
+0. Who are the authors of this package? See format below where you
+   should replace `sunet1`, `sunet2`, and `Full Name1` and `Full
+   Name2`.
+
+```{r q0}
+authors <- list(dcom99 = "Douglas H Comstock",
+                bag9031 = "Balagopal Gopakumar")
+```
+
+1. What is your package trying to achieve?  Who is it aimed at?
+
+```{r,q1, eval=FALSE}
+
+We will be pursuing the "Weather Data" project. 
+
+1.  Our package will simplify the process of querying and collecting of weather data 
+    around specific regions directly from the web. 
+
+2. Analysis will then be possible on the collected and cleaned information.
+
+3. Visualization: Possibly a nice GUI and output via shiny, time permitting.
+
+Audience: There can be two potential users of this package: 
+  (1) Data scientists/analysts, who are interested in obtain weather related information
+      for analysis 
+  (2) A non- analytical audience, who could user a user interface (GUI) for the library
+      to track and obtain useful information for a specific region.
+
+```
+
+2. Briefly describe the background if that's not obvious.  What field
+   or area of interest is it related to?  (Just briefly, in a paragraph
+   or two, maximum.) References, including web references, are welcome
+   where available.
+
+```{r,q2, eval=FALSE}
+
+The three main phases for the project will be 
+(1) accessing and retrieving weather related information from openweathermap.org, 
+minimizing the workload for the user; 
+(2) data munging - enabling the retrieved information to be utilized for visualization and 
+future pipelines; 
+(3) visualization/communicating the weather related data to the users.
+
+```
+
+3. Provide one or two use cases; that is, in a sentence or so say how
+   you see someone using the package.
+
+```{r,q3, eval=FALSE}
+
+- Data scientists/analysts could use this library to obtain weather information for a 
+  specific city/zipcode and the personal weather stations within a certain radius, 
+  then download and work with the data.
+- Users (non analysts) can use the package interface to view the weather patterns, 
+  or simply the current data and forecast for their specified area.
+
+
+```
+
+4. If you can, list the main functions or other software you plan on
+   including.  No need to implement anything now, but you should have
+   an idea.
+
+```{r, q4, eval=FALSE}
+
+The R package will provide the following functions: 
+  
+  Requirements specified
+  1. Query : (a) API interface; (b) webscape additional data using rvest package
+  
+  Extensions proposed
+  1. Comparison module: Enable users to bring in historical data and perform comparison 
+  of current weather patterns. Ideally, this would be a dashboard type interface (R Shiny?)
+  2. ChangePoint detection: Detecting periods in the past when there was a significant 
+  change in temperature/precipitation (based on user preference). This will essentially be a matter
+  of finding and reporting inflection points to answer "when did the current trend begin?".
+
+```
+
+```{r, echo = FALSE, hide = FALSE}
+## Do not edit
+none <- "none"
+basic <- "basic"
+proficient <- "proficient"
+dangerous <- "dangerous :-)"
+```
+
+5. For languages C/C++, Java, Python, Ruby, please specify your
+   proficiency: Proficient, basic knowledge, no knowledge.  (This
+   helps us evaluate the proposal sometimes and offer suggestions.)
+
+```{r q5}
+languages <- list(
+    ## replace the sunet1 and sunet2 as you did above and edit
+    ## appropriately for each member
+    'Douglas H Comstock' = c(cxx = none,
+               java = none,
+               python = basic,
+               julia = none, 
+               ruby = none)
+    ,
+    'Balagopal Gopakumar' = c(cxx = basic,
+               java = none,
+               python = proficient,
+               julia = none,                
+               ruby = none)
+)
+```
+
+## Comments and Responses
+
+__Note__ Your responses should be in this markdown itself, right after
+each point. You do not need to submit or email the responses, but do
+update it on your github repo exactly where you found it.
+
+Since you are doing one of the suggested projects, comments are minimal.
+
+1. Many sites throttle API requests if you are not a paying customer.
+
+2. Your definition of changepoint is not clear. How would the user
+   describe the "change"? Is it just a difference, a range?
+
+3. Always ensure I can run examples locally without having to get on
+   the web.
+
+
+
+
+
+
+
+
+
+
+
+

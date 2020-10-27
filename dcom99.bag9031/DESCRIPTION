@@ -1,0 +1,30 @@
+Package: dcom99.bag9031
+Title: An OpenWeatherMap.org Data Retrieval/Visualization Tool
+Version: 1.0.0
+Imports: ZipRadius, dplyr, jsonlite, magrittr, ggplot2, methods,
+        lubridate, rtweet, scales, tibble, stats, leaflet, gridExtra,
+        tidyr, shiny, stringr
+Authors@R: c(
+    person(given = "Douglas",
+           family = "Comstock",
+           role = c("aut", "cre"),
+           email = "dhcomstock@gmail.com"),
+    person(given = "Balagopal",
+           family = "Gopakumar",
+           role = c("aut"),
+           email = "balagopal.gopakumar@gmail.com"))
+Description: Provides functions intended for use with a free openweathermap.org api.
+	Provided are functions to retrieve data for a city based on Zip, or an area based on 
+	a Zip code and radius as well as some functions for visualizing and seeing what people
+	are saying about the weather on twitter in that area.
+License: GPL (>= 2)
+Depends: R (>= 2.10)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 6.1.1
+NeedsCompilation: no
+Author: Douglas Comstock [aut, cre],
+  Balagopal Gopakumar [aut]
+Maintainer: Douglas Comstock <dhcomstock@gmail.com>
+Suggests: knitr, rmarkdown
+VignetteBuilder: knitr
